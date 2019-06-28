@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      header {
+        text-align: center;
+        color: darkred;
+      }
+      .card {
+        color: darkred;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Anytime is Train Time</h1>
+          <p class="lead">
+            Choo Choo. Chee Chee.
+          </p>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div id="employee-card" class="card">
+        <h4 class="card-header">Current Train Schedule</h4>
+        <ul class="list-group list-group-horizontal">
+          <li class="col card-body list-group-item">Train Name</li>
+          <li class="col card-body list-group-item">Destination</li>
+          <li class="col card-body list-group-item">Frequency (min)</li>
+          <li class="col card-body list-group-item">Next Arrival</li>
+          <li class="col card-body list-group-item">Minutes Away</li>
+        </ul>
+        <ul class="list-group list-group-horizontal">
+          <li class="col card-body list-group-item">Trenton Express</li>
+          <li class="col card-body list-group-item">Trenton</li>
+          <li class="col card-body list-group-item">25</li>
+          <li class="col card-body list-group-item">05:35 PM</li>
+          <li class="col card-body list-group-item">10</li>
+        </ul>
+        <ul class="list-group list-group-horizontal">
+          <li class="col card-body list-group-item">Oregon Trail</li>
+          <li class="col card-body list-group-item">Salem, Oregon</li>
+          <li class="col card-body list-group-item">3800</li>
+          <li class="col card-body list-group-item">01:39 PM</li>
+          <li class="col card-body list-group-item">1154</li>
+        </ul>
+        <ul class="list-group list-group-horizontal">
+          <li class="col card-body list-group-item">Midnight Carriage</li>
+          <li class="col card-body list-group-item">Philadelphia</li>
+          <li class="col card-body list-group-item">15</li>
+          <li class="col card-body list-group-item">05:35 PM</li>
+          <li class="col card-body list-group-item">10</li>
+        </ul>
+        <ul class="list-group list-group-horizontal">
+          <li class="col card-body list-group-item">Sing Sing Caravan</li>
+          <li class="col card-body list-group-item">Atlanta</li>
+          <li class="col card-body list-group-item">45</li>
+          <li class="col card-body list-group-item">05:53 PM</li>
+          <li class="col card-body list-group-item">28</li>
+        </ul>
+        <ul class="list-group list-group-horizontal">
+          <li class="col card-body list-group-item">Boston Bus</li>
+          <li class="col card-body list-group-item">Boston</li>
+          <li class="col card-body list-group-item">65</li>
+          <li class="col card-body list-group-item">05:50 PM</li>
+          <li class="col card-body list-group-item">25</li>
+        </ul>
+        <ul class="list-group list-group-horizontal">
+          <li class="col card-body list-group-item">California Caravan</li>
+          <li class="col card-body list-group-item">San Francisco</li>
+          <li class="col card-body list-group-item">6000</li>
+          <li class="col card-body list-group-item">01:25 AM</li>
+          <li class="col card-body list-group-item">4740</li>
+        </ul>
+        <ul class="list-group list-group-horizontal">
+          <li class="col card-body list-group-item">AnalBen's Train</li>
+          <li class="col card-body list-group-item">Florida</li>
+          <li class="col card-body list-group-item">25</li>
+          <li class="col card-body list-group-item">05:28 PM</li>
+          <li class="col card-body list-group-item">3</li>
+        </ul>
+      </div>
+      <br />
+      <div class="card">
+        <h5 class="card-header">Add Train</h5>
+        <div id="train-card" class="card-body">
+          <form>
+            <div id="train-info" class="form-group">
+              <label for="train-name">Train Name</label>
+              <input type="text" class="form-control" id="name" />
+            </div>
+            <div class="form-group">
+              <label for="destination">Destination</label>
+              <input type="text" class="form-control" id="destination" />
+            </div>
+            <div class="form-group">
+              <label for="train-time"
+                >First Train Time (HH:mm-military time)</label
+              >
+              <input type="text" class="form-control" id="train-time" />
+            </div>
+            <div class="form-group">
+              <label for="frequency">Frequency (min)</label>
+              <input type="text" class="form-control" id="frequency" />
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="choochoo.js"></script>
+  </body>
+</html>
